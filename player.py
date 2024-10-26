@@ -3,6 +3,10 @@ class Player:
         self.x = x
         self.y = y
 
+    def __init__(self, pos):
+        self.x = pos[0]
+        self.y = pos[1]
+
     def __str__(self):
         return f"player@{self.x}({self.y})"
 
